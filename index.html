@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./main.js" defer></script>
+  <title>Tin's projects</title>
+</head>
+<body>
+  <span class="switch-theme">
+    <i class="icon ion-md-moon"></i>
+  </span>
+  <div class="titles">
+    <h3>Welcome</h3>
+    <p>to</p>
+    <h1>Tin's Projects</h1>
+    <img id="logo" src="./logo.png" alt="Tin's Projects. Quote: mom is a hero :)" width="70%">
+  </div>
+  <div class="search-input-container">
+    <input type="text" id="search" placeholder="Cari Tas Bagus?..." onkeyup="searchProduct()">
+    <label for="search" class="search-label">cari tas</label>
+  </div>
+  <div id="products">
+    <!-- Produk akan di-generate oleh JavaScript -->
+  </div>
+  <div id="popup-overlay" class="pcd-overlay">
+    <div id="product-content-display">
+      <button class="close-btn icon ion-md-close" id="close-btn"></button>
+      <img id="display-image" src="." alt="" width="80%">
+      <h2 id="display-title"></h2>
+      <a id="contact-seller" href=""><i class="icon ion-logo-whatsapp"></i> Mau beli ini?</a>
+    </div>
+  </div>
+  <div class="custom-order">
+    <img src="./products-photos/custom.png" alt="" width="90%">
+    <a href="" class="custom-order icon ion-logo-whatsapp"> Custom Order?</a>
+  </div>
+</body>
+</html>
