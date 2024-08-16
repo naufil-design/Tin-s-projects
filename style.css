@@ -164,6 +164,11 @@ a {
   color: #ccc;
 }
 
+.product:hover {
+  transform: translateY(-3px);
+  outline: 2px solid var(--inv-theme);
+}
+
 .sub-photos {
   display: flex;
   gap: 5px;
